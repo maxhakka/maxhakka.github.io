@@ -1,0 +1,116 @@
+header{
+font-family: 'Allan', Helvetica, Arial, sans-serif;
+font-weight: bold;
+background-color: #c5ccd3;
+text-decoration: none;
+text-transform: uppercase;
+left: 0;
+right: 0;
+top: 0;
+position: fixed;
+height: 75px;
+}
+
+header>ul{
+display: inline-block;
+float:right;
+margin-top: 0;
+}
+
+h1 {
+margin-left: 20px;
+}
+
+#menu{
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+}
+
+#menu>a {
+float:right;
+font-family: 'Allan', Helvetica, Arial, sans-serif;
+padding: 8px;
+text-align: center;
+color: black;
+text-decoration: none;
+margin-top: 17px;
+}
+
+#menu>a:hover, #menu>a:active, #menu>a:focus{
+color: white;
+}
+
+#contact{
+margin-top: 50px;
+margin-left: 15px;
+}
+
+ #about_me {
+margin-top: 75px;
+margin-left: 15px;
+}
+
+
+strong {
+font-family: 'Allan', Helvetica, Arial, sans-serif;
+font-weight: bold;
+text-decoration: none;
+}
+
+.projects{
+margin-top: 50px;
+margin-right: 15px;
+margin-left: 15px;
+}
+
+.proj_link>img {
+width: 280px;
+height: 280px;
+}
+
+h2{
+font-family: 'Allan', Helvetica, Arial, sans-serif;
+font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+font-size:3.0 em;
+}
+
+h3{
+font-family: 'Allan', Helvetica, Arial, sans-serif;
+font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+p, ul{
+font-family: 'Cardo', Georgia, Times, serif;
+}
+
+.footer{
+width: 99%;
+padding: 8px;
+border-style: solid;
+border-color: black;
+}
+
+#contact>ul{
+list-style-type:none;
+}
+
+div {
+display: inline-block;
+margin-left: 150 px:
+}
+
+.contact>img{
+width: 12px;
+height: 12px;
+}
+
+#about_me>img{
+width: 250px;
+height: 250px;
+}
