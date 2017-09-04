@@ -1,14 +1,22 @@
+body {
+background-image: url("icons/blur.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 header{
 font-family: 'Allan', Helvetica, Arial, sans-serif;
 font-weight: bold;
-background-color: #c5ccd3;
 text-decoration: none;
 text-transform: uppercase;
+background-color: #040c19;
 left: 0;
 right: 0;
 top: 0;
 position: fixed;
 height: 75px;
+border-bottom: solid;
+border-color: white;
 }
 
 header>ul{
@@ -18,7 +26,11 @@ margin-top: 0;
 }
 
 h1 {
+font-family: 'Allan', Helvetica, Arial, sans-serif;
+font-weight: bold;
+text-transform: uppercase;
 margin-left: 20px;
+color: white;
 }
 
 #menu{
@@ -33,12 +45,14 @@ float:right;
 font-family: 'Allan', Helvetica, Arial, sans-serif;
 padding: 8px;
 text-align: center;
-color: black;
+color: white;
 text-decoration: none;
 margin-top: 17px;
+margin-right: 10px;
 }
 
-#menu>a:hover, #menu>a:active, #menu>a:focus{
+a:hover, a:active, a:focus, #menu>a:hover{
+text-decoration: underline;
 color: white;
 }
 
@@ -59,10 +73,24 @@ font-weight: bold;
 text-decoration: none;
 }
 
+.main_container {
+margin: auto;
+width: 100%;
+display: block;
+text-align: center;
+}
+
 .projects{
 margin-top: 50px;
-margin-right: 15px;
-margin-left: 15px;
+margin-right: 50px;
+margin-left: 50px;
+padding: 0px 20px 0px 20px; 
+border-radius: 50px;
+border: solid white;
+}
+
+.proj_link {
+text-decoration: none;
 }
 
 .proj_link>img {
@@ -76,6 +104,7 @@ font-weight: bold;
 text-decoration: none;
 text-transform: uppercase;
 font-size:3.0 em;
+color: white;
 }
 
 h3{
@@ -83,17 +112,34 @@ font-family: 'Allan', Helvetica, Arial, sans-serif;
 font-weight: bold;
 text-decoration: none;
 text-transform: uppercase;
+color: white;
+}
+
+h4{
+font-family: 'Allan', Helvetica, Arial, sans-serif;
+font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+font-size: 100px;
+margin-bottom: 0px;
+margin-top: 14%;
 }
 
 p, ul{
 font-family: 'Cardo', Georgia, Times, serif;
+color: white;
+}
+
+strong {
+color: white;
 }
 
 .footer{
 width: 99%;
 padding: 8px;
-border-style: solid;
-border-color: black;
+border-top: solid;
+border-color: white;
 }
 
 #contact>ul{
