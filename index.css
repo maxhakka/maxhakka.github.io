@@ -1,162 +1,184 @@
 body {
-background-image: url("icons/blur.jpg");
-background-size: cover;
-background-repeat: no-repeat;
+	background-image: url("icons/blur.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 header{
-font-family: 'Allan', Helvetica, Arial, sans-serif;
-font-weight: bold;
-text-decoration: none;
-text-transform: uppercase;
-background-color: #040c19;
-left: 0;
-right: 0;
-top: 0;
-position: fixed;
-height: 75px;
-border-bottom: solid;
-border-color: white;
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #040c19;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: fixed;
+	height: 75px;
+	border-bottom: solid;
+	border-color: white;
 }
 
 header>ul{
-display: inline-block;
-float:right;
-margin-top: 0;
+	display: inline-block;
+	float:right;
+	margin-top: 0;
 }
 
 h1 {
-font-family: 'Allan', Helvetica, Arial, sans-serif;
-font-weight: bold;
-text-transform: uppercase;
-margin-left: 20px;
-color: white;
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 20px;
+	color: white;
 }
 
 #menu{
-position: fixed;
-left: 0;
-right: 0;
-top: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 }
 
 #menu>a {
-float:right;
-font-family: 'Allan', Helvetica, Arial, sans-serif;
-padding: 8px;
-text-align: center;
-color: white;
-text-decoration: none;
-margin-top: 17px;
-margin-right: 10px;
+	float:right;
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	padding: 8px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	margin-top: 17px;
+	margin-right: 10px;
 }
 
-a:hover, a:active, a:focus, #menu>a:hover{
-text-decoration: underline;
-color: white;
+a:hover, a:active, #menu>a:hover, #menu>a:active{
+	text-decoration: underline;
+	color: white;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #contact{
-margin-top: 50px;
-margin-left: 15px;
+	margin-top: 50px;
+	margin-left: 15px;
 }
 
  #about_me {
-margin-top: 75px;
-margin-left: 15px;
+	margin-top: 75px;
+	margin-left: 15px;
+	width: 45%;
 }
 
 
 strong {
-font-family: 'Allan', Helvetica, Arial, sans-serif;
-font-weight: bold;
-text-decoration: none;
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: none;	
 }
 
 .main_container {
-margin: auto;
-width: 100%;
-display: block;
-text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	width: 100%;
+	display: block;
+	text-align: center;
 }
 
 .projects{
-margin-top: 50px;
-margin-right: 50px;
-margin-left: 50px;
-padding: 0px 20px 0px 20px; 
-border-radius: 50px;
-border: solid white;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	padding: 0px 20px 0px 20px; 
+	border-radius: 50px;
+	border: solid white;
 }
 
 .proj_link {
-text-decoration: none;
+	text-decoration: none;
 }
 
 .proj_link>img {
-width: 280px;
-height: 280px;
+	width: 280px;
+	height: 280px;
 }
 
 h2{
-font-family: 'Allan', Helvetica, Arial, sans-serif;
-font-weight: bold;
-text-decoration: none;
-text-transform: uppercase;
-font-size:3.0 em;
-color: white;
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:3.0 em;
+	color: white;
 }
 
 h3{
-font-family: 'Allan', Helvetica, Arial, sans-serif;
-font-weight: bold;
-text-decoration: none;
-text-transform: uppercase;
-color: white;
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
 }
 
 h4{
-font-family: 'Allan', Helvetica, Arial, sans-serif;
-font-weight: bold;
-text-decoration: none;
-text-transform: uppercase;
-color: white;
-font-size: 100px;
-margin-bottom: 0px;
-margin-top: 14%;
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 100px;
+	margin-bottom: 0px;
+	margin-top: 14%;
 }
 
 p, ul{
-font-family: 'Cardo', Georgia, Times, serif;
-color: white;
+	font-family: 'Cardo', Georgia, Times, sans-serif;
+	color: white;
+	margin: 0;
+	padding: 5px;
 }
 
 strong {
-color: white;
-}
-
-.footer{
-width: 99%;
-padding: 8px;
-border-top: solid;
-border-color: white;
-}
-
-#contact>ul{
-list-style-type:none;
+	color: white;
 }
 
 div {
-display: inline-block;
-margin-left: 150 px:
+	display: inline-block;
+}
+
+.footer{
+	width: 99%;
+	padding: 8px;
+	border-top: solid;
+	border-color: white;
+}
+
+#contact>ul{
+	list-style-type:none;
+}
+
+#contact {
+	margin-left: 10%;
+	border: solid white;
+	margin-top: 0;
+}
+
+.contact {
+	text-align: left;
 }
 
 .contact>img{
-width: 12px;
-height: 12px;
+	width: 12px;
+	height: 12px;
 }
 
-#about_me>img{
-width: 250px;
-height: 250px;
+#profile_pic {
+	padding: 5px;
+}
+
+#about_me{
+	text-align: left;
 }
