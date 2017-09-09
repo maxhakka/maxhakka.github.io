@@ -51,7 +51,7 @@ h1 {
 	margin-right: 10px;
 }
 
-a:hover, a:active, #menu>a:hover, #menu>a:active{
+a:hover, a:active, #menu>a:hover, #menu>a:active #menu>a:visited{
 	text-decoration: underline;
 	color: white;
 }
@@ -147,6 +147,11 @@ strong {
 
 div {
 	display: inline-block;
+}
+
+.content_box {
+	padding: 10px;
+	margin-bottom: 25px;
 }
 
 .footer{
