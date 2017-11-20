@@ -159,9 +159,17 @@ div {
 	width: 95%;
 }
 
+.content_box>video {
+  		width: 50%;
+  	}
+
 @media only screen and (max-width: 480px) {
   	.content {
   		margin-top: 10%;
+  	}
+
+  	.content_box>video {
+  		width: 95%;
   	}
 
   	.project_container {
