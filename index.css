@@ -155,6 +155,20 @@ div {
 	margin-bottom: 25px;
 }
 
+.content_box>img {
+	width: 95%;
+}
+
+@media only screen and (max-width: 480px) {
+  	.content {
+  		margin-top: 10%;
+  	}
+
+  	.project_container {
+  		margin-bottom: 10%;
+  	}
+}
+
 .footer{
 	width: 99%;
 	padding: 8px;
@@ -196,6 +210,7 @@ div {
 
 #profile_pic {
 	padding: 5px;
+
 }
 
 #about_me{
