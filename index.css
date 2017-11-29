@@ -157,10 +157,14 @@ div {
 
 .content_box>img {
 	width: 95%;
+	height: auto;
 }
 
-.content_box>video {
+.content_box>video.vertical {
   		width: 50%;
+  	}
+ .content_box>video.horisontal {
+  		width: 70%;
   	}
 
 @media only screen and (max-width: 480px) {
@@ -168,7 +172,7 @@ div {
   		margin-top: 10%;
   	}
 
-  	.content_box>video {
+  	.content_box>video.vertical, .content_box>video.horisontal{
   		width: 95%;
   	}
 
