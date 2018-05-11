@@ -160,21 +160,34 @@ div {
 	height: auto;
 }
 
-.content_box>video.vertical {
-  		width: 50%;
-  	}
- .content_box>video.horisontal {
+ .content_box>video.horisontal, {
   		width: 70%;
   	}
+
+ .video-container {
+  		padding: 10px;
+		margin-bottom: 25px;
+		width: 100%;
+  	}
+
+ .video-container>iframe {
+ 	width: 70%;
+ 	height: 600px;
+ }
 
 @media only screen and (max-width: 480px) {
   	.content {
   		margin-top: 10%;
   	}
 
-  	.content_box>video.vertical, .content_box>video.horisontal{
+  	.content_box>video.horisontal{
   		width: 95%;
   	}
+
+  	.video-container>iframe {
+ 	width: 95%;
+ 	height: 200px;
+ }
 
   	.project_container {
   		margin-bottom: 10%;
