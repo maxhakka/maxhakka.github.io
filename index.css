@@ -150,6 +150,15 @@ div {
 	display: inline-block;
 }
 
+.content {
+	text-align: center;
+}
+
+.content>p {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
 .content_box {
 	padding: 10px;
 	margin-bottom: 25px;
@@ -167,7 +176,7 @@ div {
  .video-container {
   		padding: 10px;
 		margin-bottom: 25px;
-		width: 100%;
+		width: 95%;
   	}
 
  .video-container>iframe {
