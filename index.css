@@ -1,7 +1,6 @@
 body {
 	background-image: url("icons/blur.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 header{
@@ -93,7 +92,7 @@ strong {
 	margin-right: 50px;
 	margin-left: 50px;
 	padding: 0px 20px 0px 20px; 
-	border-radius: 50px;
+	border-radius: 10px;
 	border: solid white;
 }
 
