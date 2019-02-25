@@ -1,59 +1,134 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="index.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href='https://fonts.googleapis.com/css?family=Allan:bold' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
-		<title>Max Häkkä</title>	
-		<link rel="icon" href="icons/logo.png">			
-	</head>
-	<body>	
-		
-		<header>
-		<h1>Max Häkkä</h1>
-		<div id="menu">
-		<a href="about_me.html">About me</a>
-		<a href="index.html">Projects</a>
-		</div>
-		</header>
-		
-		<br>
-		<div class="main_container">
-			
-			<div class=content><h2>Space Haptics</h2>
-			
-			<p><strong>A haptics based computer game set in space.</strong></p>
-			<br>
-			<p><h3>What is it?</h3></p>
+<title>Max Häkkä - Space Haptics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/logo.png"> 
+<style>
+body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Raleway", sans-serif
+}
+/* Flexible iFrame */
+
+.flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.flexible-container iframe,
+.flexible-container object,
+.flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="img/profile.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>MAX HÄKKÄ</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+  </div>
+    <div class="w3-panel w3-large">
+    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://github.com/maxhakka"><i class="fa fa-github w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">		
+
+			<header id="portfolio">
+			    <a href="#"><img src="img/portrait2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+			    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+		  	</header>
+
+			<div class="w3-container w3-padding-large">
+			<h2>Space Haptics</h2>
+			<div class="w3-section w3-bottombar w3-padding-10"></div>
 			<p>Space Haptics is a computer game that is controller with the <a href="http://www.novint.com/index.php/novintfalcon">Novint Falcon</a> haptic device. The game Space Haptics was developed in the <a href="http://www.chai3d.org/">Chai 3D</a> engine using the C++ programming language. The aim of the game is to steer a spaceship in a 3D space and to collect coins in order to gain points using the haptic device. The game also involves asteroids that make the user lose points when colliding with them. Each collision with an object provides haptic feedback through the haptic device. The acceleration and deceleration forces are also felt through the haptic device by either increaseing or decreasing the resistance respectively.</p>
-			<br>
-			<div class="content_box">
-				<video class="horisontal" controls>
-				  <source src="icons/space_haptics.mp4" type="video/mp4">
-				  Your browser does not support the video tag.
-				</video>
-				<p>A video demonstration of the application.</p>
+			<div class="flexible-container">
+				<iframe src="img/space_haptics.mp4" type="video/mp4" frameborder="0" style="border:0">
+				</iframe>
 			</div>
-			<div class="content_box">
-				<img src="icons/space1.png"></img>
-				<p>The application starts and a timer ticks down from 60 s to 0. For each collision points are either added (coin) or deducted (asteroid). </p>
+			<div class="w3-section w3-bottombar w3-padding-10"></div>
+			<div class="w3-row-padding w3-padding-16">
+			    <div class="w3-col m4">
+			      <img src="img/space1.png" alt="could not load" style="width:100%">
+			      <p>The application starts and a timer ticks down from 60 s to 0. For each collision points are either added (coin) or deducted (asteroid).</p>
+			    </div>
+			    <div class="w3-col m4">
+			      <img src="img/space2.png" alt="could not load" style="width:100%">
+			      <p>The speed of the spaceship is determined by the position of the haptic device. The farther away the device is the faster the spaceship will travel through space, also making it have more objects on screen simultaneously.</p>
+			    </div>
+			    <div class="w3-col m4">
+			      <img src="img/space3.png" alt="could not load" style="width:100%">
+			      <p>When the time is up, the user can no longer get points. Watch out, hitting more asteroids than coins might give you a negative score!</p>
+			    </div>
+		  	</div>
+		  	</div>
+		</div>
+		<div class="w3-container w3-padding-large w3-grey" style="margin-left:300px">
+			<h4><b>Information</b></h4>
+			<div class="w3-row w3-padding-24" style="margin:0 -16px">
+				<div class="w3-half w3-container w3-margin-bottom">
+			      <div class="w3-container w3-dark-grey">
+			      	<strong>The Team</strong><p>Max Häkkä and Furkan Kücükbay.</p>
+			      </div>
+			    </div>
+			    <div class="w3-half w3-container w3-margin-bottom">
+			      <div class="w3-container w3-dark-grey">
+			      	<strong>My Part</strong><p>I was involved from the start in designing the game, as well as<br>creating all of the 3D models and also a large part of the coding.</p>
+			      </div>
+			    </div>
 			</div>
-			<div class="content_box">
-				<img src="icons/space3.png"></img>
-				<p>When the time is up, the user can no longer get points. Watch out, hitting more asteroids than coins might give you a negative score!</p>
+			<div class="w3-row " style="margin:0 -16px">
+				<div class="w3-half w3-container w3-margin-bottom">
+			      <div class="w3-container w3-dark-grey">
+			      	<strong>Course</strong><p>DH2660 - Haptics.</p>
+			      </div>
+			    </div>
+			    <div class="w3-half w3-container w3-margin-bottom">
+			      <div class="w3-container w3-dark-grey">
+			      	<strong>Timeframe</strong><p>About 8 weeks of development in March and April 2017.</p>
+			      </div>
+			    </div>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="footer_content">
-				<strong>The Team</strong><p>Max Häkkä and Furkan Kücükbay.</p>
-				<strong>My Part</strong><p>I was involved from the start in designing the game, as well as<br>creating all of the 3D models and also a large part of the coding.</p>
-			</div>
-			<div class="footer_content">
-				<strong>Course</strong><p>DH2660 - Haptics.</p>
-				<strong>Timeframe</strong><p>About 8 weeks of development in March and April 2017.</p>
-			</div>
-		</div>
+
+	<!-- End page content -->
+	</div>
+	<script>
+	// Script to open and close sidebar
+	function w3_open() {
+	    document.getElementById("mySidebar").style.display = "block";
+	    document.getElementById("myOverlay").style.display = "block";
+	}
+	 
+	function w3_close() {
+	    document.getElementById("mySidebar").style.display = "none";
+	    document.getElementById("myOverlay").style.display = "none";
+	}
+	</script>
+
 	</body>
 </html>
