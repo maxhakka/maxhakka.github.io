@@ -1,36 +1,15 @@
 <!DOCTYPE html>
-<html>
-<title>Max Häkkä - Sunny</title>
+<html lang="en">
+<title>Sunny | Max Häkkä</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="img/logo.png"> 
-<style>
-body,h1,h2,h3,h4,h5,h6 {
-	font-family: "Raleway", sans-serif
-}
-/* Flexible iFrame */
+<link rel="stylesheet" href="stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-.flexible-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.flexible-container iframe,
-.flexible-container object,
-.flexible-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-</style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
@@ -47,8 +26,8 @@ body,h1,h2,h3,h4,h5,h6 {
     <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
   </div>
     <div class="w3-panel w3-large">
-    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://github.com/maxhakka"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin fa-lg w3-hover-opacity"></i></a>
+    <a href="https://github.com/maxhakka"><i class="fa fa-github fa-lg w3-hover-opacity"></i></a>
   </div>
 </nav>
 
@@ -63,16 +42,18 @@ body,h1,h2,h3,h4,h5,h6 {
 		  	</header>
 
 			<div class="w3-container w3-padding-large">
-			<h2>Sunny the Sunflower</h2>
+			<h1>Sunny the Sunflower</h1>
 			<div class="w3-section w3-bottombar w3-padding-10"></div>
-			<h4>What is it?</h4>
+			<a href="./index.html" class="back-button">&#8592; Back to portfolio</a>
+			<h2>What is it?</h2>
 			<p>Sunny is an interactive companion sunflower built using <a href="https://www.arduino.cc/">Arduino</a> microcontrollers. Sunny follows the light thanks to photocells mounted on its head. It also reacts when you touch its leaves or petals by retracting them. The more you interact with Sunny, the happier it gets and when the flower reaches its final state of happiness, it will play music and dance for you.</p>
 			<div class="flexible-container">
 				<iframe src="https://www.youtube.com/embed/tsVdAUPQxGw" frameborder="0" style="border:0">
 				</iframe>
 			</div>
+			<br>
 			<div class="w3-section w3-bottombar w3-padding-10"></div>
-			<h4>The Process</h4>
+			<h2>The Process</h2>
 			<p>The process of designing and building Sunny started with testing the hardware to make sure it was capable of moving the flower in a satisfactory way. After the sensors and servo motors were tested, the frame of the flower was attached to them. The code for the flower was then tested to make sure the flower responded in a way that was fun to interact with. 
 			<br><br>	The most difficult part of the process was avoiding breaking the frame of the flower because of the violent movements of the flower. The problem was solved by slowing down the movement of the flower and adding reinforcing parts to the frame.</p>
 			<div class="w3-row-padding w3-padding-16">
@@ -87,28 +68,30 @@ body,h1,h2,h3,h4,h5,h6 {
 		  	</div>
 		  	</div>
 		  	<div class="w3-container w3-padding-large w3-grey">
-			<h4><b>Information</b></h4>
+
+			<!-- Footer -->
+			<h2>Information</h2>
 			<div class="w3-row w3-padding-24" style="margin:0 -16px">
 				<div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>The Team</strong><p>Sophie de Haan, Max Häkkä, Adrian Latupeirissa and Ah Zau Marang.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>The Team</h3><p>Sophie de Haan, Max Häkkä, Adrian Latupeirissa and Ah Zau Marang.</p>
 			      </div>
 			    </div>
 			    <div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>My Part</strong><p>I was mainly working on connecting the physical components with each<br>other and the microcontrollers as well as coding most of the interactions.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>My Part</h3><p>I worked on the Arduino code, as well as connecting components with microcontrollers.</p>
 			      </div>
 			    </div>
 			</div>
 			<div class="w3-row " style="margin:0 -16px">
 				<div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>Course</strong><p>DH2400 - Physical Interaction Design.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>Course</h3><p>DH2400 - Physical Interaction Design.</p>
 			      </div>
 			    </div>
 			    <div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>Timeframe</strong><p>About 5 weeks of development in September and October 2017.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>Timeframe</h3><p>About 5 weeks of development in September and October 2017.</p>
 			      </div>
 			    </div>
 			</div>
@@ -118,18 +101,6 @@ body,h1,h2,h3,h4,h5,h6 {
 
 	<!-- End page content -->
 	</div>
-	<script>
-	// Script to open and close sidebar
-	function w3_open() {
-	    document.getElementById("mySidebar").style.display = "block";
-	    document.getElementById("myOverlay").style.display = "block";
-	}
-	 
-	function w3_close() {
-	    document.getElementById("mySidebar").style.display = "none";
-	    document.getElementById("myOverlay").style.display = "none";
-	}
-	</script>
-
+	<script src="script.js"></script>
 	</body>
 </html>

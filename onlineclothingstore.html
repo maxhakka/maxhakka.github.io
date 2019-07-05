@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-<title>Max Häkkä - OCS</title>
+<html lang="en">
+<title>Online Clothing Store | Max Häkkä</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="img/logo.png"> 
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-</style>
+<link rel="stylesheet" href="stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
@@ -26,8 +26,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
   </div>
     <div class="w3-panel w3-large">
-    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://github.com/maxhakka"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin fa-lg w3-hover-opacity"></i></a>
+    <a href="https://github.com/maxhakka"><i class="fa fa-github fa-lg w3-hover-opacity"></i></a>
   </div>
 </nav>
 
@@ -43,9 +43,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 		  	</header>
 
 			<div class="w3-container w3-padding-large">
-			<h2>Online Clothing Store</h2>
+			<h1>Online Clothing Store</h1>
 			<div class="w3-section w3-bottombar w3-padding-10"></div>
-			<h4>What is it?</h4>
+			<a href="./index.html" class="back-button">&#8592; Back to portfolio</a>
+			<h2>What is it?</h2>
 			<p>Online Clothing Store is an prototype online web store for clothing, built with the <a href="https://angular.io/">Angular JS</a> framework. It has lots of features including log in functionality, shopping cart, categories, a search bar and a whole lot more. The store pulls data from a <a href="https://www.mysql.com/">MySQL</a> database using an API built in <a href="http://www.php.net/">PHP.</a></p>
 			<div class="w3-row-padding w3-padding-16">
 			    <div class="w3-col m6">
@@ -77,33 +78,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 			      <p>The item page also includes suggestions on what else you might also like.</p>
 			    </div>
 				</div>
-				<h4>The Process</h4>
+				<h2>The Process</h2>
 				<p>The process of building the web store started with making wireframes that included all the features in the wireframing tool <a href="https://balsamiq.com/">Balsamiq</a>. Before creating the web store we had to make our own <a href="https://www.mysql.com/">MySQL</a> database in order to keep track of the clothes. We also created an API for the database in order to interface with the database.
 				<br><br>One of the most challening parts of building the store was using <a href="https://angular.io/">Angular JS</a> as I had no experience with front-end frameworks before the project. Because of that, this was one of the projects where I learned the most about web development.</p>
 		</div>
+
+
+		<!-- Footer -->
 		<div class="w3-container w3-padding-large w3-grey">
-			<h4><b>Information</b></h4>
+			<h2>Information</h2>
 			<div class="w3-row w3-padding-24" style="margin:0 -16px">
 				<div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>The Team</strong><p>Max Häkkä and Ah Zau Marang.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>The Team</h3><p>Max Häkkä and Ah Zau Marang.</p>
 			      </div>
 			    </div>
 			    <div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>My Part</strong><p>I was involved from the start in prototyping and design, as well as the coding. My focus was mainly on the front of the application.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>My Part</h3><p>I was involved in both prototyping and design, as well as the coding the front-end of the application.</p>
 			      </div>
 			    </div>
 			</div>
 			<div class="w3-row " style="margin:0 -16px">
 				<div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>Course</strong><p>DH2642 - Interaction Programming and the Dynamic Web.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>Course</h3><p>DH2642 - Interaction Programming and the Dynamic Web.</p>
 			      </div>
 			    </div>
 			    <div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>Timeframe</strong><p>About 6 weeks of development in March and April 2016.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>Timeframe</h3><p>About 6 weeks of development in March and April 2016.</p>
 			      </div>
 			    </div>
 			</div>
@@ -111,18 +115,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	<!-- End page content -->
 	</div>
 
-	<script>
-	// Script to open and close sidebar
-	function w3_open() {
-	    document.getElementById("mySidebar").style.display = "block";
-	    document.getElementById("myOverlay").style.display = "block";
-	}
-	 
-	function w3_close() {
-	    document.getElementById("mySidebar").style.display = "none";
-	    document.getElementById("myOverlay").style.display = "none";
-	}
-	</script>
-
+	<script src="script.js"></script>
 	</body>
 </html>

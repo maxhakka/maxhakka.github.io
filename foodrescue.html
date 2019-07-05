@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-<title>Max Häkkä - Food Rescue</title>
+<html lang="en">
+<title>Food Rescue | Max Häkkä</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="img/logo.png"> 
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-</style>
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
@@ -26,8 +26,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
   </div>
     <div class="w3-panel w3-large">
-    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://github.com/maxhakka"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin fa-lg w3-hover-opacity"></i></a>
+    <a href="https://github.com/maxhakka"><i class="fa fa-github fa-lg w3-hover-opacity"></i></a>
   </div>
 </nav>
 
@@ -43,9 +43,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 		  	</header>
 
 			<div class="w3-container w3-padding-large">
-			<h2>Food Rescue</h2>
+			<h1>Food Rescue</h1>
 			<div class="w3-section w3-bottombar w3-padding-10"></div>
-			<h4>What is it?</h4>
+			<a href="./index.html" class="back-button">&#8592; Back to portfolio</a>
+			<h2>What is it?</h2>
 			<p>Food Rescue is an application for buying leftover foods from restaurants or sharing it with other users. The application is built with the <a href="https://ionicframework.com/">Ionic </a> mobile framework which allows for building hybrid applications with web based coding.</p>
 			<div class="w3-row-padding w3-padding-16">
 			    <div class="w3-col m4">
@@ -75,32 +76,34 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 			      <p>User profile.</p>
 			    </div>
 				</div>
-				<h4>The Process</h4>
+				<h2>The Process</h2>
 				<p>The process of designing the application started with identifying the users' needs. This meant interviewing both restaurant managers and students at KTH Campus. After establishing the users' needs, a rough prototype was built in the prototyping tool <a href="https://www.figma.com">Figma</a>. After doing small walkthrough tests on the prototype, a web application was built with the <a href="https://ionicframework.com/">Ionic</a> framework in HTML. This application was tested extensively by six users in order to find out usability issues.</p>
 		</div>
+
+		<!-- Footer -->
 		<div class="w3-container w3-padding-large w3-grey">
-			<h4><b>Information</b></h4>
+			<h2>Information</h2>
 			<div class="w3-row w3-padding-24" style="margin:0 -16px">
 				<div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>The Team</strong><p>Max Häkkä.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>The Team</h3><p>Max Häkkä.</p>
 			      </div>
 			    </div>
 			    <div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>My Part</strong><p>I made everything from start to finish.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>My Part</h3><p>I made everything from start to finish in this project.</p>
 			      </div>
 			    </div>
 			</div>
 			<div class="w3-row " style="margin:0 -16px">
 				<div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>Course</strong><p>DA222X - Degree Project in Computer Science and Communication, Second Cycle.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>Course</h3><p>DA222X - Degree Project in Computer Science and Communication, Second Cycle.</p>
 			      </div>
 			    </div>
 			    <div class="w3-half w3-container w3-margin-bottom">
-			      <div class="w3-container w3-dark-grey">
-			      	<strong>Timeframe</strong><p>About 6 weeks of development in June and July 2018, not including prototyping and testing.</p>
+			      <div class="w3-container w3-light-grey w3-round">
+			      	<h3>Timeframe</h3><p>About 6 weeks of development in June and July 2018, not including prototyping and testing.</p>
 			      </div>
 			    </div>
 			</div>
@@ -108,18 +111,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	<!-- End page content -->
 	</div>
 
-	<script>
-	// Script to open and close sidebar
-	function w3_open() {
-	    document.getElementById("mySidebar").style.display = "block";
-	    document.getElementById("myOverlay").style.display = "block";
-	}
-	 
-	function w3_close() {
-	    document.getElementById("mySidebar").style.display = "none";
-	    document.getElementById("myOverlay").style.display = "none";
-	}
-	</script>
-
+	<script src="script.js"></script>
 	</body>
 </html>
