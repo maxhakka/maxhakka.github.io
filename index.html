@@ -7,186 +7,218 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="img/logo.png"> 
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="css/stylesheet.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="img/portrait.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>MAX HÄKKÄ</b></h4>
-  </div>
-  <div class="w3-bar-block">
-    <a id="prtf" href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a id="abt" href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a> 
-  </div>
-  <div class="w3-panel w3-large">
-    <a href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin fa-lg w3-hover-opacity"></i></a>
-    <a href="https://github.com/maxhakka"><i class="fa fa-github fa-lg w3-hover-opacity"></i></a>
-  </div>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="img/portrait2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+<div class="wrapper">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
     <div class="w3-container">
-    <h1>My Portfolio</h1>
-    <div class="w3-section w3-bottombar w3-padding-10"></div>
-    </div>
-  </header>
-  
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="foodrescue.html">
-        <img src="img/food-rescue.jpg" alt="Food Rescue" style="width:100%" class="w3-hover-opacity">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey link-button" title="close menu">
+        <i class="fa fa-remove"></i>
       </a>
-      <div class="w3-container w3-white">
-        <a href="foodrescue.html"><p><b>Food Rescue</b></p>
-        <p>An application for sharing and buying leftover foods from restaurants built with Ionic.</p>
-        </a>
-      </div>
+      <img src="img/portrait.jpg" style="width:45%;" class="w3-round"><br><br>
+      <h4><b>MAX HÄKKÄ</b></h4>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="frontier.html">
-      <img src="img/frontier.png" alt="Frontier" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="frontier.html"><p><b>Frontier</b></p>
-        <p>A co-located multiplayer game about managing a planet's resources built with Angular.</p>
-        </a>
-      </div>
+    <div class="w3-bar-block" id="nav-elements">
+      <a id="prtf" href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding menu-item"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+      <a id="abt" href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding menu-item"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a>
+      <a id="cntct" href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding menu-item"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="sunny.html">
-      <img src="img/sunny-the-sunflower.jpg" alt="Sunny the Sunflower" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="sunny.html"><p><b>Sunny the Sunflower</b></p>
-        <p>An interactive robotic companion sunflower built with Arduino microcontrollers.</p>
-        </a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="battlenub.html">
-      <img src="img/battlenub.jpg" alt="Battlenub" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="battlenub.html"><p><b>Battlenub</b></p>
-        <p>A web based multiplayer Battleship game built with the PubNub data stream network.</p>
-        </a>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="spacehaptics.html">
-      <img src="img/space-haptics.jpg" alt="Space Haptics" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="spacehaptics.html"><p><b>Space Haptics</b></p>
-        <p>A haptics based computer game set in space for use with the Novint Falcon controller.</p>
-        </a>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <a href="onlineclothingstore.html">
-      <img src="img/ocs-cover.jpg" alt="Online Clothing Store" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="onlineclothingstore.html"><p><b>Online Clothing Store</b></p>
-        <p>A prototype online web store for clothing built with Angular.</p>
-        </a>
-      </div>
-    </div>
-  </div>
+  </nav>
 
-  <!-- Pagination -->
- <!--  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <img src="img/portrait2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-container">
+      <h1>My Portfolio</h1>
+      <div class="w3-section w3-bottombar w3-padding-10"></div>
+      </div>
+    </header>
+    
+    <!-- First Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom card">
+        <a class="card-content" href="foodrescue.html">
+          <img src="img/food-rescue.jpg" alt="Food Rescue" class="w3-hover-opacity card-img">
+          <div class="w3-container w3-white">
+            <h3>Food Rescue</h3>
+            <p>An application for sharing and buying leftover foods from restaurants built with Ionic.</p>
+          </div>
+      </a>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom card">
+        <a class="card-content" href="frontier.html">
+          <img src="img/frontier.png" alt="Frontier"  class="w3-hover-opacity card-img">
+          <div class="w3-container w3-white">
+            <h3>Frontier</h3>
+            <p>A co-located multiplayer game about managing a planet's resources built with Angular.</p>
+          </div>
+        </a>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom card">
+        <a class="card-content" href="sunny.html">
+          <img src="img/sunny-the-sunflower.jpg" alt="Sunny the Sunflower" class="w3-hover-opacity card-img">
+          <div class="w3-container w3-white">
+            <h3>Sunny the Sunflower</h3>
+            <p>An interactive robotic companion sunflower built with Arduino microcontrollers.</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </div> -->
+    
+    <!-- Second Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom card">
+        <a class="card-content" href="battlenub.html">
+          <img src="img/battlenub.jpg" alt="Battlenub" class="w3-hover-opacity card-img">
+          <div class="w3-container w3-white">
+            <h3>Battlenub</h3>
+            <p>A web based multiplayer Battleship game built with the PubNub data stream network.</p>
+          </div>
+        </a>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom card">
+        <a class="card-content" href="spacehaptics.html">
+          <img src="img/space-haptics.jpg" alt="Space Haptics" class="w3-hover-opacity card-img">
+          <div class="w3-container w3-white">
+            <h3>Space Haptics</h3>
+            <p>A haptics based computer game set in space for use with the Novint Falcon controller.</p>
+          </div>
+        </a>
+      </div>
+      <div class="w3-third w3-container card">
+        <a class="card-content" href="onlineclothingstore.html">
+          <img src="img/ocs-cover.jpg" alt="Online Clothing Store" class="w3-hover-opacity card-img">
+          <div class="w3-container w3-white">
+            <h3>Online Clothing Store</h3>
+            <p>A complete online web store for clothing built with the AngularJS framework.</p>
+          </div>
+        </a>
+      </div>
+    </div>
 
-  <!-- About Me -->
-  <div id="about">
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-      <h2>About Me</h2>
-      <p>I'm Max, a recent Master of Science in Engineering graduate from  in <a href="https://www.kth.se/en/studies/master/interactivemediatechnology/description-1.593765">Interactive Media Technology</a> at <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>. I'm interested in UX design and front-end development. I like to design and program interactive applications, several of which can be found under the projects tab on this page. Feel free to check them out!<p>
+    <!-- About Me -->
+    <div id="about">
+      <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h2>About Me</h2>
+        <div class="w3-section w3-bottombar w3-padding-10"></div>
+        <p>I'm Max, UX designer with a background from the Master of Science in Engineering programme in <a href="https://www.kth.se/en/studies/master/interactivemediatechnology/description-1.593765">Interactive Media Technology</a> at <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>. I like to design and program interactive applications. Feel free to check them out!<p>
 
-      <h3>UX Skills</h3>
-      <!-- UX Skills -->
-      <ul>
-        <li><strong>Analysis:</strong> user personas and user flows.</li>
-        <li><strong>UX research:</strong> competitor analysis and interviews.</li>
-        <li><strong>Sketching:</strong> creating sitemaps, wireframing and making mockups.</li>
-        <li><strong>UI design:</strong> visual design of a prototype.</li>
-        <li><strong>Evaluation:</strong> user testing of prototypes and analysis of results.</li>
-      </ul>
-      
-      <h3>Technical Skills</h3>
-      <!-- Technical Skills -->
-      <ul>
-        <li><strong>Web programming:</strong> <a href="https://www.w3schools.com/">HTML/CSS/JavaScript</a> and <a href="https://angular.io/">Angular</a>.</li>
-        <li><strong>Other programming:</strong> <a href="https://www.python.org/">Python</a>.</li>
-        <li><strong>Prototyping tools:</strong> <a href="https://www.sketch.com/">Sketch</a>, <a href="https://www.figma.com/">Figma</a>, <a href="https://balsamiq.com/">Balsamiq</a> and <a href="https://www.invisionapp.com/">InVision</a>,</li>
-        <li><strong>Other:</strong> <a href="https://www.office.com/">Microsoft Office</a> and <a href="http://www.adobe.com">Adobe Creative Cloud</a>
-      </ul>
+          <!-- Skills Tables -->
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half w3-margin-bottom">
+              <ul class="w3-ul w3-border w3-white">
+                <li class="w3-dark-grey w3-xlarge w3-padding-32 w3-center">UX/UI SKILLS</li>
+                <!-- UX Skills -->
+                <li class="w3-padding-16"><strong>UX research:</strong> competitor analysis, user interviews,  personas and user story maps.</li>
+                <li class="w3-padding-16"><strong>Sketching:</strong> creating sitemaps, wireframing and making prototypes.</li>
+                <li class="w3-padding-16"><strong>Prototyping tools:</strong> <a href="https://www.sketch.com/">Sketch</a>, <a href="https://www.figma.com/">Figma</a>, <a href="https://balsamiq.com/">Balsamiq</a>, <a href="https://www.adobe.com/se/products/xd.html">Adobe XD</a> and <a href="https://www.invisionapp.com/">InVision</a>.</li>
+                <li class="w3-padding-16"><strong>Evaluation:</strong> user testing of prototypes and analysis of results.</li>
+                <li class="w3-padding-16"><strong>Web accessibility:</strong> <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a>.</li>
+              </ul>
+            </div>
+            
+            <div class="w3-half w3-margin-bottom">
+              <ul class="w3-ul w3-border w3-white">
+                <li class="w3-teal w3-xlarge w3-padding-32 w3-center">TECHNICAL SKILLS</li>
+                <!-- Technical Skills -->
+                <li class="w3-padding-16"><strong>Front-end development:</strong> <a href="https://www.w3schools.com/">HTML</a>, <a href="https://www.w3schools.com/">CSS</a>, <a href="https://www.w3schools.com/">JavaScript</a>.</li>
+                <li class="w3-padding-16"><strong>Frameworks:</strong> <a href="https://angular.io/">Angular</a>, <a href="https://ionicframework.com/">Ionic</a> and <a href="https://getbootstrap.com/">Bootstrap</a>.</li>
+                <li class="w3-padding-16"><strong>Other programming:</strong> elementary skills in <a href="https://www.python.org/">Python</a>.</li>
+                <li class="w3-padding-16"><strong>Development tools:</strong> <a href="https://git-scm.com/">Git</a>, <a href="https://www.atlassian.com/software/jira">Atlassian Jira</a> and <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</li>
+                <li class="w3-padding-16"><strong>Other:</strong> <a href="https://www.office.com/">Microsoft Office</a> and <a href="http://www.adobe.com">Adobe Creative Cloud</a>.</li>
+              </ul>
+            </div>
+            
+            <!-- <div class="w3-third">
+              <ul class="w3-ul w3-border w3-white">
+                <li class="w3-black w3-xlarge w3-padding-32 w3-center">OTHER SKILLS</li>
 
-      <h3>Other Skills</h3>
-      <!-- Other Skills -->
-      <ul>
-        <li><strong>Languages:</strong> Full working proficiency (written, spoken) in Swedish, Finnish and English</li>
-        <li><strong>Driver's license:</strong> EU Class B</li>
-      </ul>
-
-      <br>
+                <li class="w3-padding-16"><strong>Languages:</strong> Swedish, Finnish and English</li>
+                <li class="w3-padding-16"><strong>Driver's license:</strong> EU Class B</li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="w3-container w3-padding-large w3-grey">
-      <h2 id="contact">Contact Me</h2>
+    <div id="contact">
+    <div class="w3-container w3-padding-large">
+      <h2>Contact</h2>
+      <div class="w3-section w3-bottombar w3-padding-10"></div>
+      <p>Interested? Feel free to contact me!</p>
       <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-        <div class="w3-third w3-dark-grey">
-          <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <div class="w3-third w3-center w3-teal circle">
+          <p><i class="fa fa-envelope w3-xxlarge"></i></p>
           <p><a href="mailto:max.hakka@gmail.com">max.hakka@gmail.com</a></p>
         </div>
-        <div class="w3-third w3-teal">
-          <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <div class="w3-third w3-center w3-teal circle">
+          <p><i class="fa fa-map-marker w3-xxlarge"></i></p>
           <p>Stockholm, Sweden</p>
         </div>
-        <div class="w3-third w3-dark-grey">
-          <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <div class="w3-third w3-center w3-teal circle">
+          <p><i class="fa fa-phone w3-xxlarge"></i></p>
           <p><a href="tel:+46737418810">+46737418810</a></p>
         </div>
       </div>
     </div>
+  </div>
+
+     
+  </div>
   
+</div>
+ <!-- Footer -->
+ <footer class="w3-container w3-padding-32 w3-dark-grey">
+   <div class="wrapper">
+
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>Contact</h3>
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-large w3-margin-right"></i> Stockholm, Sweden</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-large w3-margin-right"></i><a class="footer-link" href="tel:+46737418810">+46737418810</a></p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-large w3-margin-right"></i> <a class="footer-link" href="mailto:max.hakka@gmail.com">max.hakka@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="w3-third">
+        <h3>About Me</h3>
+        <div class="w3-section">
+          I am a UX designer passionate about providing enjoyable and accessible user experiences.
+        </div>
+      </div>
+      <div class="w3-third">
+        <h3>Follow me</h3>
+        <div class="w3-section">
+          <a class="link-button" href="https://se.linkedin.com/in/max-häkkä-00910289"><i class="fa fa-linkedin fa-lg w3-xxlarge"></i></a>
+          <a class="link-button" href="https://github.com/maxhakka"><i class="fa fa-github fa-lg w3-xxlarge"></i></a>
+        </div>
+      </div>
+
+    <div class="w3-row-padding footer-bottom">
+      <div class="w3-section w3-bottombar"></div>
+      <p class="center-align">Made by Max Häkkä</p>
+    </div>
+   </div>
+</footer>
+
 
 <!-- End page content -->
-</div>
 
-<script src="script.js"></script>
-<script src="menu.js"></script>
+
+<script src="js/menu.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

@@ -15,13 +15,69 @@ hr {
   border: 1px solid black;
 }
 
-a:focus, #prtf:focus, #abt:focus { 
+footer {
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+}
+
+::selection {
+  background: black;
+  color: #fff;
+  text-shadow: none;
+}
+
+a:focus, div:focus, .menu-item:focus{ 
   outline: 2px solid #009688; 
 }
 
-a:hover{
-  font-weight: bold;
+a {
   color: #009688;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #023935ff;
+}
+
+.link-button {
+  color: white;
+  margin-right: 10px;
+}
+
+.menu-item:hover {
+  text-decoration: none !important;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left:  auto; 
+
+  max-width: 1200px; 
+
+  padding-right: 10px; 
+  padding-left:  10px; 
+}
+
+.circle {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.card:hover {
+  transition-duration: 0.7s;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.card-content:hover {
+  text-decoration: none;
+}
+
+.card-img {
+  width:100%;
 }
 
 .back-button {
@@ -31,7 +87,7 @@ a:hover{
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   display: inline-block;
   font-size: 16px;
   margin-top: 10px;
@@ -40,21 +96,22 @@ a:hover{
 }
 
 .back-button:hover {
-  font-weight: bold;
   color: white;
   background-color: #023935ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.fa-linkedin {
-  margin-right: 7px;
+.footer-link {
+  color: white;
+  text-decoration: underline;
 }
 
-#prtf {
-  color:#009688;
+.center-align {
+  text-align: center;
 }
 
 .w3-section.w3-bottombar.w3-padding-10 {
-  border-bottom: 2px solid #009688!important;
+  border-bottom: 2px solid #009688 !important;
 }
 
 .w3-container.w3-light-grey.w3-round {
