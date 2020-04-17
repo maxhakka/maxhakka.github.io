@@ -2,19 +2,19 @@
 var targetOffset = $("#about").offset().top;
 var secondTargetOffset = $("#contact").offset().top;
 
-$('#prtf').css({"color":"#009688"});
+$('#prtf').css({"color":"rgb(77, 0, 179)"});
 
 var $w = $(window).scroll(function(){
     if ( $w.scrollTop() >= secondTargetOffset ) { 
       $('#abt').css({"color":"black"});
       $('#prtf').css({"color":"black"});
-      $('#cntct').css({"color":"#009688"});
+      $('#cntct').css({"color":"rgb(77, 0, 179)"});
     } else if ( $w.scrollTop() >= targetOffset){
       $('#prtf').css({"color":"black"});
-      $('#abt').css({"color":"#009688"});
+      $('#abt').css({"color":"rgb(77, 0, 179)"});
       $('#cntct').css({"color":"black"});
     } else {
-      $('#prtf').css({"color":"#009688"});
+      $('#prtf').css({"color":"rgb(77, 0, 179)"});
       $('#abt').css({"color":"black"});
       $('#cntct').css({"color":"black"});
     }

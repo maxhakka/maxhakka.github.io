@@ -1,5 +1,22 @@
-body,h1,h2,h3,h4,h5,h6 {
+body,h2,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
+
+h1 {
+  color: black;
+  margin: 10px 0;
+}
+
+h1>span {
+  color: rgb(111, 0, 255);
 }
 
 h2 {
@@ -11,34 +28,55 @@ h3 {
   font-size: 18px;
 }
 
-hr {
-  border: 1px solid black;
+.sidebar {
+  z-index: 3;
+  width: 200px;
+}
+
+.bottombar {
+  border-bottom: 6px solid rgb(111, 0, 255) !important;
+}
+
+.page-content {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+}
+
+.section {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 footer {
+  background-color: #222;
+  color: white;
   position: absolute;
   width: 100%;
   z-index: 99999;
 }
 
 ::selection {
-  background: black;
+  background: rgb(111, 0, 255);
   color: #fff;
   text-shadow: none;
 }
 
-a:focus, div:focus, .menu-item:focus{ 
-  outline: 2px solid #009688; 
+a:focus, div:focus, input:focus, textarea:focus, .menu-item:focus, .button:focus{ 
+  outline: 2px solid rgb(158, 87, 252); 
 }
 
 a {
-  color: #009688;
+  color: rgb(111, 0, 255);
   text-decoration: none;
 }
 
 a:hover{
   text-decoration: underline;
-  color: #023935ff;
+  color: rgb(158, 87, 252);
+}
+
+.previous-page {
+  font-weight: bold;
 }
 
 .link-button {
@@ -48,26 +86,23 @@ a:hover{
 
 .menu-item:hover {
   text-decoration: none !important;
+  background-color: white;
+  color: rgb(111, 0, 255) !important;
 }
 
 .wrapper {
   margin-right: auto;
   margin-left:  auto; 
 
-  max-width: 1200px; 
+  max-width: 1400px; 
 
   padding-right: 10px; 
-  padding-left:  10px; 
-}
-
-.circle {
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  padding-left:  10px;
+  width: 100%;
 }
 
 .card:hover {
-  transition-duration: 0.7s;
+  transition: 0.4s;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
@@ -80,9 +115,19 @@ a:hover{
   width:100%;
 }
 
-.back-button {
+.card-header {
+  background: rgb(111, 0, 255);
+  background: linear-gradient(rgb(111, 0, 255), rgb(126, 46, 230));
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0 16px 24px 2px rgba(0,29,63,0.14);
+}
+
+.button {
   border-radius: 30px;
-  background-color: #009688;
+  background-color: rgb(111, 0, 255);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -93,12 +138,50 @@ a:hover{
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  box-shadow: 0 16px 24px 2px rgba(0,29,63,0.14);
 }
 
-.back-button:hover {
+.button:hover {
+  background-color: rgb(158, 87, 252);
   color: white;
-  background-color: #023935ff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-fullwidth {
+  width: 100%;
+  box-shadow: 0 16px 24px 2px rgba(0,29,63,0.14);
+}
+
+.img-text {
+  font-style: italic;
+}
+
+label {
+  font-weight: bold;
+}
+
+label>span {
+  color: rgb(111, 0, 255);
+}
+
+.inputfield>input, .inputfield>textarea{
+  margin-top: 5px;
+  box-shadow: inset 0 1px 5px rgba(0,29,63,0.14);
+}
+
+.inputfield>textarea {
+  height: 150px;
+}
+
+.submitbutton {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  display: block;
+}
+
+.footer-section {
+  padding: 15px !important;
 }
 
 .footer-link {
@@ -106,17 +189,19 @@ a:hover{
   text-decoration: underline;
 }
 
+.footer-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .center-align {
   text-align: center;
 }
 
-.w3-section.w3-bottombar.w3-padding-10 {
-  border-bottom: 2px solid #009688 !important;
-}
-
 .w3-container.w3-light-grey.w3-round {
   height: 8.5rem;
-  border: 2px solid #009688;
+  border: 2px solid rgb(111, 0, 255);
 }
 
 video {
@@ -149,6 +234,12 @@ video {
   .w3-row-padding.w3-padding-16 {
     padding-bottom: 0px!important;
     padding-top: 0px!important;
+  }
+}
+
+@media (max-width: 993px) {
+  .page-content {
+    width: 100%;
   }
 }
   
