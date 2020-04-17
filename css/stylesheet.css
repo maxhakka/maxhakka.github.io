@@ -156,6 +156,14 @@ a:hover{
   font-style: italic;
 }
 
+.portrait {
+  border-radius: 5px;
+}
+
+.icon {
+  color: black;
+}
+
 label {
   font-weight: bold;
 }
@@ -241,5 +249,14 @@ video {
   .page-content {
     width: 100%;
   }
+
+  .sidebar {
+    width: 300px;
+  }
+
+  .portrait {
+    width: 45%;
+  }
+
 }
   
