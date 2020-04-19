@@ -156,6 +156,7 @@ a:hover{
 
 .card-header {
   background: rgb(111, 0, 255);
+  background: linear-gradient(to left,rgb(207, 45, 212),  rgb(111, 0, 255)); 
   color: white;
   border-radius: 10px 10px 0 0;
 }
@@ -204,6 +205,11 @@ a:hover{
 
 .icon {
   color: white;
+}
+
+.icon:hover {
+  color: white !important;
+  background-color: transparent !important;
 }
 
 label {
@@ -287,8 +293,13 @@ video {
     padding-bottom: 0px!important;
     padding-top: 0px!important;
   }
+
+  .illustration{
+    margin: 0px!important;
+  }
 }
 
+@media only screen and (max-width: 993px) {
   .page-content {
     width: 100%;
   }
@@ -301,5 +312,11 @@ video {
     width: 45%;
   }
 
+}
+
+@media only screen and (max-width: 1200px) {
+  .illustration{
+    margin-top: 100px;
+  }
 }
   
