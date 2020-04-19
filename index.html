@@ -21,7 +21,7 @@
           <i class="fa fa-remove"></i>
         </a>
         <img class="portrait" src="img/portrait.jpg" class="w3-round"><br><br>
-        <h2>MAX HÄKKÄ</h2>
+        <h2 class="sidebar-header">MAX HÄKKÄ</h2>
       </div>
       <div class="w3-bar-block" id="nav-elements">
         <a id="prtf" href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding menu-item"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
@@ -53,7 +53,7 @@
           <div class="w3-row-padding">
             <div class="w3-third w3-container w3-margin-bottom card">
               <a class="card-content" href="foodrescue.html">
-                <img src="img/food-rescue.jpg" alt="Food Rescue" class="card-img">
+                <div class="card-img" style="background-image: url(img/food-rescue.jpg);"></div>
                 <div class="w3-container w3-white card-text">
                   <h3>Food Rescue</h3>
                   <p>An application for sharing and buying leftover foods from restaurants built with Ionic and Angular.</p>
@@ -62,7 +62,7 @@
             </div>
             <div class="w3-third w3-container w3-margin-bottom card">
               <a class="card-content" href="frontier.html">
-                <img src="img/frontier.png" alt="Frontier"  class="card-img">
+                <div class="card-img" style="background-image: url(img/frontier.png);"></div>
                 <div class="w3-container w3-white card-text">
                   <h3>Frontier</h3>
                   <p>A browser based, co-located multiplayer game about managing a planet's resources built with Angular.</p>
@@ -71,7 +71,6 @@
             </div>
             <div class="w3-third w3-container w3-margin-bottom card">
               <a class="card-content" href="sunny.html">
-                <img src="img/sunny-the-sunflower.jpg" alt="Sunny the Sunflower" class="card-img">
                 <div class="w3-container w3-white card-text">
                   <h3>Sunny the Sunflower</h3>
                   <p>An interactive robotic companion sunflower built with Arduino microcontrollers, sensors and motors.</p>
@@ -84,7 +83,7 @@
           <div class="w3-row-padding">
             <div class="w3-third w3-container w3-margin-bottom card">
               <a class="card-content" href="battlenub.html">
-                <img src="img/battlenub.jpg" alt="Battlenub" class=" card-img">
+                <div class="card-img" style="background-image: url(img/battlenub.jpg);"></div>
                 <div class="w3-container w3-white card-text">
                   <h3>Battlenub</h3>
                   <p>A browser based multiplayer Battleship game for phones, built with the PubNub data stream network.</p>
@@ -93,7 +92,7 @@
             </div>
             <div class="w3-third w3-container w3-margin-bottom card">
               <a class="card-content" href="spacehaptics.html">
-                <img src="img/space-haptics.jpg" alt="Space Haptics" class="card-img">
+                <div class="card-img" style="background-image: url(img/space-haptics.jpg);"></div>
                 <div class="w3-container w3-white card-text">
                   <h3>Space Haptics</h3>
                   <p>A haptics based computer game set in space for use with the Novint Falcon controller, built with C++.</p>
@@ -102,7 +101,7 @@
             </div>
             <div class="w3-third w3-container card">
               <a class="card-content" href="onlineclothingstore.html">
-                <img src="img/ocs-cover.jpg" alt="Online Clothing Store" class="card-img">
+                <div class="card-img" style="background-image: url(img/ocs-cover.jpg);"></div>
                 <div class="w3-container w3-white card-text">
                   <h3>Online Clothing Store</h3>
                   <p>A complete online web store for clothing built with the AngularJS framework, with a functioning back-end.</p>
@@ -150,21 +149,26 @@
 
         <!-- Contact Section -->
         <div class="section" id="contact">
-        <div class="w3-container w3-padding-large">
-          <h2>Contact</h2>
-          <p>Interested? Feel free to contact me!</p>
-          <br>
-          <form action="mailto:max.hakka@gmail.com" method="GET">
-            <label for="Subject">Subject</label>
-            <p class="inputfield">
-              <input class="w3-input w3-padding-16 w3-border" type="text" name="Subject">
-            </p>
-            <label for="Body">Message</label>
-            <p class="inputfield">
-              <textarea class="w3-input w3-padding-16 w3-border" name="Body"></textarea>
-            </p>
-            <p><button class="button submitbutton" type="submit">Send message</button></p>
-          </form>
+          <div class="w3-container w3-padding-large">
+            <div class="w3-half w3-margin-bottom">
+              <h2>Contact</h2>
+              <p>Interested? Don't hesitate to contact me!</p>
+              <br>
+              <form action="mailto:max.hakka@gmail.com" method="GET">
+                <label for="Subject">Subject</label>
+                <p class="inputfield">
+                  <input class="w3-input w3-padding-16 w3-border" type="text" name="Subject">
+                </p>
+                <label for="Body">Message</label>
+                <p class="inputfield">
+                  <textarea class="w3-input w3-padding-16 w3-border" name="Body"></textarea>
+                </p>
+                <p><button class="button submitbutton" type="submit">Send message</button></p>
+              </form>
+            </div>
+            <div class="w3-half w3-margin-bottom w3-margin-top">
+              <img src="img/contact.svg" alt="Contact illustration" class="illustration">
+            </div>
           </div>
         </div>
       </div>
@@ -198,7 +202,7 @@
           </div>
 
         <div class="w3-row-padding footer-bottom">
-          <p class="center-align">© MAX HÄKKÄ 2020 </p>
+          <p class="center-align">© MAX HÄKKÄ 2020 — Illustrations by <a href="https://freepik.com" class="footer-link">Freepik</a></p>
         </div>
       </div>
       </div>

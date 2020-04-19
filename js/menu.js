@@ -2,7 +2,7 @@
 var targetOffset = $("#about").offset().top;
 var secondTargetOffset = $("#contact").offset().top;
 
-$('#prtf').css({"color":"black"});
+$('#prtf').css({"color":"rgb(111, 0, 255)"});
 $('#prtf').css({"background-color":"white"});
 
 var $w = $(window).scroll(function(){
@@ -11,17 +11,17 @@ var $w = $(window).scroll(function(){
       $('#prtf').css({"background-color":"transparent"});
       $('#abt').css({"color":"white"});
       $('#abt').css({"background-color":"transparent"});
-      $('#cntct').css({"color":"black"});
+      $('#cntct').css({"color":"rgb(111, 0, 255)"});
       $('#cntct').css({"background-color":"white"});
     } else if ( $w.scrollTop() >= targetOffset){
       $('#prtf').css({"color":"white"});
       $('#prtf').css({"background-color":"transparent"});
-      $('#abt').css({"color":"black"});
+      $('#abt').css({"color":"rgb(111, 0, 255)"});
       $('#abt').css({"background-color":"white"});
       $('#cntct').css({"color":"white"});
       $('#cntct').css({"background-color":"transparent"});
     } else {
-      $('#prtf').css({"color":"black"});
+      $('#prtf').css({"color":"rgb(111, 0, 255)"});
       $('#prtf').css({"background-color":"white"});
       $('#abt').css({"color":"white"});
       $('#abt').css({"background-color":"transparent"});
