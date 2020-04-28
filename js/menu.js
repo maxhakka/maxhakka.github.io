@@ -1,31 +1,21 @@
 //Script to change color of menu button according to active section
-var targetOffset = $("#about").offset().top;
-var secondTargetOffset = $("#contact").offset().top;
+let targetOffset = $("#about").offset().top;
+let secondTargetOffset = $("#contact").offset().top;
 
-$('#prtf').css({"color":"rgb(111, 0, 255)"});
-$('#prtf').css({"background-color":"white"});
+$('#prtf').css({"color": "rgb(111, 0, 255)"});
 
 var $w = $(window).scroll(function(){
-    if ( $w.scrollTop() >= secondTargetOffset ) { 
-      $('#prtf').css({"color":"white"});
-      $('#prtf').css({"background-color":"transparent"});
-      $('#abt').css({"color":"white"});
-      $('#abt').css({"background-color":"transparent"});
+    if ( $w.scrollTop() >= secondTargetOffset - 50 ) {
+      $('#prtf').css({"color":"black"});
+      $('#abt').css({"color":"black"});
       $('#cntct').css({"color":"rgb(111, 0, 255)"});
-      $('#cntct').css({"background-color":"white"});
-    } else if ( $w.scrollTop() >= targetOffset){
-      $('#prtf').css({"color":"white"});
-      $('#prtf').css({"background-color":"transparent"});
+    } else if ( $w.scrollTop() >= targetOffset - 50){
+      $('#prtf').css({"color":"black"});
       $('#abt').css({"color":"rgb(111, 0, 255)"});
-      $('#abt').css({"background-color":"white"});
-      $('#cntct').css({"color":"white"});
-      $('#cntct').css({"background-color":"transparent"});
+      $('#cntct').css({"color":"black"});
     } else {
       $('#prtf').css({"color":"rgb(111, 0, 255)"});
-      $('#prtf').css({"background-color":"white"});
-      $('#abt').css({"color":"white"});
-      $('#abt').css({"background-color":"transparent"});
-      $('#cntct').css({"color":"white"});
-      $('#cntct').css({"background-color":"transparent"});
+      $('#abt').css({"color":"black"});
+      $('#cntct').css({"color":"black"});
     }
 });
