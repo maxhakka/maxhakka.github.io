@@ -118,7 +118,7 @@ a:hover{
 }
 
 .illustration {
-  margin: 24px 0 24px 16px;
+  margin: 0 0 0 16px;
 }
 
 .card {
@@ -185,7 +185,6 @@ a:hover{
 .button:hover {
   background-image: linear-gradient(rgb(158, 87, 252), rgb(64, 77, 255));
   color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-fullwidth {
@@ -288,15 +287,15 @@ video {
 
 @media only screen and (max-width: 600px) {
   .w3-row.w3-padding-24 {
-    padding-bottom: 0px!important;
+    padding-bottom: 0px !important;
   }
   .w3-row-padding.w3-padding-16 {
-    padding-bottom: 0px!important;
-    padding-top: 0px!important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
   }
 
   .illustration{
-    margin: 0px!important;
+    margin: 32px 0 !important;
   }
 }
 
@@ -317,7 +316,7 @@ video {
 
 @media only screen and (max-width: 1200px) {
   .illustration{
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
   
