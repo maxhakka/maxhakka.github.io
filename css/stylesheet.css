@@ -22,6 +22,7 @@ h1>span {
 
 h2 {
   text-transform: uppercase;
+  font-size: 26px;
 }
 
 h3 {
@@ -113,6 +114,10 @@ a:hover{
   color: rgb(60, 122, 255) !important;
 }
 
+.menu-item {
+  font-weight: bold;
+}
+
 .menu-item:hover {
   text-decoration: none !important;
   background-color: white;
@@ -121,12 +126,12 @@ a:hover{
 
 .wrapper {
   margin-right: auto;
-  margin-left:  auto; 
+  margin-left: auto; 
 
   max-width: 1400px; 
 
   padding-right: 10px; 
-  padding-left:  10px;
+  padding-left: 10px;
   width: 100%;
 }
 
@@ -212,7 +217,7 @@ a:hover{
 }
 
 .img-text {
-  font-style: italic;
+  font-size: 13px;
   font-weight: bold;
 }
 
