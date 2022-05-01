@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Content Management System | Max Häkkä</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Online Clothing Store, a prototype store for clothes, complete with a functioning back-end.">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<nav class="w3-sidebar w3-collapse w3-animate-left sidebar" id="mySidebar">
+			<br>
+			<div class="w3-container">
+			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey link-button" title="close menu">
+				<i class="fa fa-remove"></i>
+			</a>
+			<img src="img/portrait2.jpg" class="w3-round"><br><br>
+			<h2 class="sidebar-header">MAX HÄKKÄ</h2>
+			</div>
+			<div class="w3-bar-block" id="nav-elements">
+			<a id="prtf" href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding menu-item active"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
+			<a id="abt" href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding menu-item"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a>
+			<a id="cntct" href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding menu-item"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+			</div>
+		</nav>
+	
+		<div class="wrapper">
+	
+			<!-- Overlay effect when opening sidebar on small screens -->
+			<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+	
+			<!-- !PAGE CONTENT! -->
+			<div class="w3-main page-content">
+
+				<div class="article">
+
+					<!-- Header -->
+					<header id="portfolio">
+						<img src="img/portrait2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large" alt="profile picture">
+						<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+						<div class="w3-container">
+							<div class="previous-page"><i class="fa fa-arrow-left"></i><a href="./index.html"> Back to home</a></div>
+							<div class="hero-img" style="background-image: url(img/t1d-hero.jpg);"></div>
+						</div>
+					</header>
+
+					<div class="section">
+						<div class="w3-container">
+							<h1>A Content Management System<span>.</span></h1>
+							<div class="w3-section w3-bottombar bottombar"></div>
+							<p class="ingress">A custom made content management system (CMS) for a healtcare application for iOS and Android.</p>
+						</div>
+
+						<div class="w3-container">
+							<h2>Background and Problem</h2>
+							<p>
+								A healthcare application for diabetics was in need of a content management system, so that the content could be updated
+								by the client. The application included a carb calculator as well as important information in the form of articles and news.
+							</p>
+							<div class="w3-col m6">
+								<img class="img-height-restricted" src="img/t1d-1.jpg" alt="the home screen of the app">
+								<p class="w3-container img-text">The home screen in the app, with the latest news and shortcuts to important functions.</p>
+							</div>
+							<div class="w3-col m6">
+								<img class="img-height-restricted" src="img/t1d-2.jpg" alt="an article in the app">
+								<p class="w3-container img-text">The articles in the app have detailed information for diabetics.</p>
+							</div>
+						</div>
+
+						<div class="w3-container">
+							<h2>Research and Analysis</h2>
+							<p>
+								A number of remote interviews along with two workshops together with the client were conducted in order to establish the needs
+								of the users. A list of requirements were noted down. The requirements inlcuded the ability to add and modify images, articles, 
+								news, quizes and checklists.
+							</p>
+							<p>
+								The information architecture as well as techincal requirements were discussed together with the client and the developers.
+							</p>
+						</div>
+
+						<div class="w3-container">
+							<h2>Ideation and Design</h2>
+							<p>
+								Based on the research and analysis conducted, a number of designs were created in Adobe XD. Based on testing and feedback,
+								the designs were updated and a number of additional functions were added, such as the ability to upload files.
+							</p>
+
+							<div class="w3-col m12">
+								<img class="img-fullwidth" src="img/news.jpg" alt="a news page in the CMS">
+								<p class="img-text">The first iteration of the CMS news page.</p>
+							</div>
+
+							<div class="w3-col m12">
+								<img class="img-fullwidth" src="img/article.jpg" alt="an updated page in the CMS">
+								<p class="img-text">The second iteration of the CMS added features.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+			
+		<!-- Footer -->
+		<footer class="w3-main w3-container w3-padding-32 page-content">
+			<div class="wrapper">
+	  
+			  <div class="article">
+	  
+				<div class="w3-row-padding">
+				  <div class="w3-third footer-section">
+					<h3>Contact</h3>
+					<div class="w3-section">
+					  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-large w3-margin-right"></i>Stockholm, Sweden</p>
+					  <p><i class="fa fa-phone fa-fw w3-text-white w3-large w3-margin-right"></i><a class="footer-link" href="tel:+46737418810">+46737418810</a></p>
+					  <p><i class="fa fa-envelope fa-fw w3-text-white w3-large w3-margin-right"></i><a class="footer-link" href="mailto:max.hakka@gmail.com">max.hakka@gmail.com</a></p>
+					</div>
+				  </div>
+				  <div class="w3-third footer-section">
+					<h3>About Me</h3>
+					<div class="w3-section">
+					  I am a UX designer passionate about providing enjoyable and accessible user experiences.
+					</div>
+				  </div>
+				  <div class="w3-third footer-section">
+					<h3>Follow me</h3>
+					<div class="w3-section">
+					  <a class="link-button" aria-label="Linkedin" href="https://se.linkedin.com/in/max-häkkä-00910289" target="_blank" rel=”noopener”><i class="fa fa-linkedin fa-lg w3-xxlarge"></i></a>
+					  <a class="link-button" aria-label="GitHub" href="https://github.com/maxhakka" target="_blank" rel=”noopener”><i class="fa fa-github fa-lg w3-xxlarge"></i></a>
+					</div>
+				  </div>
+				</div>
+				<div class="w3-row-padding footer-bottom">
+					<p class="center-align">MAX HÄKKÄ © 2022 — Illustrations by <a href="https://freepik.com" class="footer-link" target="_blank" rel=”noopener”>Freepik</a></p>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+
+		  <button class="w3-button w3-large w3-circle w3-xlarge fab-button" id="scrollButton" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></button>
+
+		<!-- End page content -->
+
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
