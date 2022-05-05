@@ -6,16 +6,19 @@ $('#prtf').css({"color": "rgb(29, 63, 255)"});
 
 var $w = $(window).scroll(function(){
     if ( $w.scrollTop() >= secondTargetOffset - 50 ) {
-      $('#prtf').css({"color":"rgba(0, 0, 0, 0.8);"});
-      $('#abt').css({"color":"rgba(0, 0, 0, 0.8);"});
+      $('#prtf').css({"color":"rgba(0, 0, 0, 0.8)"});
+      $('#abt').css({"color":"rgba(0, 0, 0, 0.8)"});
       $('#cntct').css({"color":"rgb(29, 63, 255)"});
+      console.log('contact');
     } else if ( $w.scrollTop() >= targetOffset - 50){
-      $('#prtf').css({"color":"rgba(0, 0, 0, 0.8);"});
+      $('#prtf').css({"color":"rgba(0, 0, 0, 0.8)"});
       $('#abt').css({"color":"rgb(29, 63, 255)"});
-      $('#cntct').css({"color":"rgba(0, 0, 0, 0.8);"});
+      $('#cntct').css({"color":"rgba(0, 0, 0, 0.8)"});
+      console.log('about');
     } else {
       $('#prtf').css({"color":"rgb(29, 63, 255)"});
-      $('#abt').css({"color":"rgba(0, 0, 0, 0.8);"});
-      $('#cntct').css({"color":"rgba(0, 0, 0, 0.8);"});
+      $('#abt').css({"color":"rgba(0, 0, 0, 0.8)"});
+      $('#cntct').css({"color":"rgba(0, 0, 0, 0.8)"});
+      console.log('portfolio');
     }
 });
